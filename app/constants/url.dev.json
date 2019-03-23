@@ -1,0 +1,4 @@
+{
+    "defaultPath": "http://localhost:8098/panelView/parseData/{code}?index={index}",
+    "completelyPath": "http://localhost:8098/panelView/parseData/{code}?index={index}&kanbanCode={kanbanCode}"
+}

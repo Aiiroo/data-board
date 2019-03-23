@@ -1,0 +1,4 @@
+{
+    "defaultPath": "panelView/parseData/{code}?index={index}",
+    "completelyPath": "panelView/parseData/{code}?index={index}&kanbanCode={kanbanCode}"
+}

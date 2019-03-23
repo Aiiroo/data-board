@@ -1,0 +1,51 @@
+@prefixCls: rc-table;
+
+.@{prefixCls} {
+    margin: 10px;
+    height: calc(~"100% - 20px");
+    color: white;
+}
+
+.@{prefixCls}-main {
+    // height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.@{prefixCls}-thead {
+    background-color: transparent;
+}
+
+.@{prefixCls}-header-item {
+    // font-size: 1rem;
+    font-weight: bold;
+}
+
+.@{prefixCls}-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.@{prefixCls}-content {
+    height: 100%;
+    width: 100%;
+}
+.@{prefixCls}-body {
+    height: 100%;
+}
+.@{prefixCls} {
+    table {
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: left;
+        padding-left: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border: 1px solid white;
+        box-sizing: border-box;
+    }
+  }

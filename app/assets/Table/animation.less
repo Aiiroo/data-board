@@ -1,0 +1,65 @@
+@import './motion.less';
+
+.fade-enter {
+  .motion-common();
+  opacity: .7;
+  border: none;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.fade-appear {
+  .motion-common();
+  opacity: .7;
+  border: none;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.fade-leave {
+  .motion-common();
+  transform: translateX(0px);
+  opacity: .5;
+  border: none;
+  animation-timing-function: ease-out;
+  animation-play-state: paused;
+}
+
+.fade-enter.fade-enter-active {
+  animation-name: fadeIn;
+  animation-play-state: running;
+}
+
+.fade-appear.fade-appear-active {
+  animation-name: fadeIn;
+  animation-play-state: running;
+}
+
+.fade-leave.fade-leave-active {
+  animation-name: fadeOut;
+  animation-play-state: running;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: .7;
+    border: none;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: .5;
+    border: none;
+    // transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    border: none;
+    // transform: translateX(300px);
+  }
+}
